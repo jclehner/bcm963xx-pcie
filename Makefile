@@ -1,5 +1,7 @@
 obj-m += arm/pcie-bcm963xx.o common/pcie_common.o
 
+EXTRA_CLFAGS += -Iinclude/bcmdrivers_opensource
+EXTRA_CLFAGS += -Iinclude/shared_opensource
 KDIR ?= /lib/modules/$(shell uname -r)/build
 
 modules:
